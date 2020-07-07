@@ -922,7 +922,6 @@
 </template>
 
 <script>
-import '../../assets/css/bootstrap.min.css'
 export default {
     created:{
 

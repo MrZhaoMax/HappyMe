@@ -11,6 +11,11 @@ import http  from './api/api'
 import DBHelper from './api/DBHelper'
 import md5 from 'js-md5'
 
+
+import '../src/assets/css/style.css'
+
+import '../src/assets/css/bootstrap.min.css'
+
 Vue.prototype.$http = http;
 Vue.prototype.$DBHelper = DBHelper;
 Vue.prototype.$MD5 = md5;
