@@ -1,7 +1,8 @@
 <template>
-  <div class="container">
-      <div class="row">
 
+  <div class="container">
+    
+      <div class="row">
       </div>
       <div class="row" v-for="item in 3 " :key="item" style="margin-top:30px;">
         <div class="col-xs-6 col-sm-3" >
@@ -29,9 +30,32 @@
              {{item}}
         </div>
       </div>
+    
+      <!-- <editor-bar v-model="detail" :isClear="isClear" @change="change"></editor-bar> -->
   </div>
 </template>
+<script>
+  
+//import EditorBar from './editor'
 
+export default {
+    components:{},
+    data() {
+      return {
+         isClear: false,
+         detail:""
+      }
+    },
+    created(){
+
+    },
+    methods: {
+      change(val) {
+            
+      },
+    },
+}
+</script>
 <style >
   
 @media (max-width: 575.98px) { 

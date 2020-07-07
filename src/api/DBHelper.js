@@ -10,11 +10,12 @@ var tableID = '';
 
 //添加数据，表名+数据
 function add(tableName,Data){
-    if(tableName=='' || Data == null ||JSON.parse(Data) == ''){
+    if(tableName=='' || Data == null ||JSON.stringify(Data) == ''){
         return '字段不许为空！';
     }
 
     http.post(`${tableName}`,Data).then(res=>{
+        console.log(res)
         return res;
     }).catch(err=>{
         return err;

@@ -20,13 +20,13 @@ let http  = Axios.create({
     }
 });
 
-http.interceptors.request.use(
-    config=>{
-        if(getCookie('token') != null ||getCookie('token') != ''){
-            config.headers['authorization']=getCookie('token');
-        }
-    }
-)
+// http.interceptors.request.use(
+//     config=>{
+//         if(getCookie('token') != null ||getCookie('token') != ''){
+//             config.headers['authorization']=getCookie('token');
+//         }
+//     }
+// )
 
 export default http;
 
